@@ -14,7 +14,7 @@ app.get('/api/v1/todos', (req,res) => {
     })
 })
 
-//listen to port
+//running the app
 const PORT = process.env.port || 5000
 app.listen(PORT, () => {
     console.log(`App listening on port ${PORT}`)
