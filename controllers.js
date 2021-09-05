@@ -11,12 +11,12 @@ const getAllTodos = (req,res) => {
 const createTodos = (req, res) => {
     if(!req.body.title) {
       return res.status(400).send({
-        success: 'false',
+        success: false,
         message: 'title is required'
       })
     } else if(!req.body.description) {
       return res.status(400).send({
-        success: 'false',
+        success: false,
         message: 'description is required'
       })
     }
